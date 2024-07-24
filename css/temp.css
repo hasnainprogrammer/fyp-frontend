@@ -1,0 +1,102 @@
+/* Font Sizes */
+/* 
+16px, 20px, 25px, 31px, 39px, 48px, 61px, 71px, 82px, 94px
+*/
+
+/* Space Sizes */
+/* 
+2px, 4px, 8px, 16px, 22px, 32px, 38px, 48px, 54px, 64px, 70px, 80px, 86px, 96px, 102px, 112px
+*/
+/* ------------------------------------------------ */
+
+/* Variables */
+:root {
+  --main-color: #2563eb;
+  --gray-color: #343a40;
+  --font-family: "Poppins", sans-serif;
+  --left-right-margin: 96px;
+  --sections-margin: 96px;
+  --group-elements-margin: 54px;
+  --main-color-tint-100: #dbeafe;
+  --main-color-tint-50: #eff6ff;
+  --main-color-shade-700: #1d4ed8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--gray-color);
+  font-size: 16px;
+}
+
+/* General Styles */
+.icon {
+  font-size: 20px;
+  margin: 0 4px;
+}
+
+.btn {
+  background-color: var(--main-color);
+}
+/* ------------------------------------------------ */
+
+/* Navbar */
+.navbar {
+  margin: 8px var(--left-right-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  /* background-color: aquamarine; */
+}
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: var(--gray-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.navbar .nav-links a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero-section {
+  margin: var(--sections-margin) var(--left-right-margin);
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section .content,
+.hero-section .image {
+  width: 50%;
+}
+.hero-section .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero-section .image {
+  text-align: end;
+}
+.hero-section .image img {
+  width: 70%;
+}
+
+span {
+  color: #2563eb;
+}
+
+/* ------------------------------- */
